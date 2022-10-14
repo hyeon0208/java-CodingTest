@@ -9,8 +9,9 @@ class MorseDecoder {
 						, ".--.", "--.-",".-.","...","-"
 						, "..-", "...-", ".--", "-..-","-.--"
 						, "--.." };
+        //  morse.length 는 26이다.
 
-		String result="";
+        String result="";
 
 		for (int i=0; i < source.length(); i++ ) {
             // i가 0일 경우 charAt(0)은 S로, 'S'(83) - 'A'(65)는 18이다.
