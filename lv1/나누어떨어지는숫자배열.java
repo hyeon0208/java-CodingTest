@@ -29,31 +29,32 @@ class Solution {
     }
 
 // 배열만 사용
+import java.util.*;
+
 class Solution {
-    public int[] solution(int[] arr, int divisor) {
+    public int[] solution(int[] arr) {
+      int[] temp = arr.clone();
+                Arrays.sort(temp);
+        int min =temp[0];
         
-        int cnt = 0;
+        ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]%divisor==0) {
-                cnt++;
+            if(arr[i] != min) {
+                list.add(arr[i]); // list에 값을 넣고
             }
         }
         
-        int[] answer = new int[cnt];
-        cnt = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]%divisor == 0){
-                answer[cnt]=arr[i];
-                cnt++;
-            }
-        }
-        
-        Arrays.sort(answer);
-        
-        if(answer.length == 0){
+        int[] answer;
+        if(list.size() == 0) {
             answer = new int[1];
             answer[0] = -1;
+        } else {
+            answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {        
+            answer[i] = list.get(i);  // list(i)의 값을 빼서 배열 answer에 대입.
         }
+        }
+        
         
         return answer;
     }
