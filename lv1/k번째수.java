@@ -9,7 +9,6 @@ class Solution {
             Arrays.sort(temp);
             answer[i] = temp[commands[i][2]-1];
         }
-
         return answer;
     }
 }
