@@ -1,3 +1,4 @@
+package 기본형과참조형;
 public class sb {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();

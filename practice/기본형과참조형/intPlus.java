@@ -1,3 +1,4 @@
+package 기본형과참조형;
 public class intPlus {
     public static void main(String[] args) {
         int int1 = 1234;        

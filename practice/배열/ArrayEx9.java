@@ -1,3 +1,4 @@
+package 배열;
 import java.util.*; // Arrays.toString 사용
 
 public class ArrayEx9 {

@@ -1,3 +1,6 @@
+import 상속과포함.Point;
+
+package 생성자;
 class DrawShape {
 	public static void main(String[] args) {
 		Point[] p = {   new Point(100, 100),

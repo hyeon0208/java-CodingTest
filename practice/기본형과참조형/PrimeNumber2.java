@@ -1,3 +1,4 @@
+package 기본형과참조형;
 // 소수 구하기
 public class PrimeNumber2 {
 

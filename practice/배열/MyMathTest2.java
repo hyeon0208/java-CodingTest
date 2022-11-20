@@ -1,3 +1,4 @@
+package 배열;
 class MyMath2 {
 	long a, b;
 	

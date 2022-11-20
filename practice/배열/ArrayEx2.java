@@ -1,3 +1,4 @@
+package 배열;
 import java.util.Arrays;
 
 public class ArrayEx2 {

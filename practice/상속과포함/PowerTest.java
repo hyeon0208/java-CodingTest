@@ -1,3 +1,4 @@
+package 상속과포함;
 class PowerTest { 
 	public static void main(String[] args) { 
 		int x = 2; 

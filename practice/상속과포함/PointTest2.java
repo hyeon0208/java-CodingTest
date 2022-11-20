@@ -1,3 +1,4 @@
+package 상속과포함;
 class PointTest2 {
 	public static void main(String argsp[]) {
 		Point3D p3 = new Point3D();

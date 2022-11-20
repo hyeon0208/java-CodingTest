@@ -1,3 +1,4 @@
+package 기본형과참조형;
 public class ParseInt {
     public static void main(String[] args) {
 		// TODO Auto-generated method stub

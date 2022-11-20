@@ -1,3 +1,4 @@
+package 배열;
 public class ArrayEx4 {
     public static void main(String[] args) {
 		char[] abc = {'A', 'B', 'C', 'D', 'E'};

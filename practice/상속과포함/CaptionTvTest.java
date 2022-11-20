@@ -1,3 +1,4 @@
+package 상속과포함;
 class Tv {
 	boolean power; 	// 전원상태(on/off)
 	int channel;	// 채널

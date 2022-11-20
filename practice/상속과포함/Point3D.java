@@ -1,3 +1,4 @@
+package 상속과포함;
 class Point {
 	int x;
 	int y;

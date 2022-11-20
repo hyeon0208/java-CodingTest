@@ -1,3 +1,4 @@
+package 기본형과참조형;
 public class OperatorEx23 {
     	// 문자열은 비교 할 대는 == 연산자 말고 equals() 메서드를 사용해야한다.
 	// equals() 는 서로 객체가 달라도 내용이 같으면 true를 반환한다.

@@ -1,3 +1,4 @@
+package 기본형과참조형;
 public class OverflowEx {
     public static void main(String[] args) {
 		short sMin = -32768; // short가 표현가능한 최소값

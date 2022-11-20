@@ -1,3 +1,4 @@
+package method;
 class Data { int x; }
 
 public class ReferenceParamEx {

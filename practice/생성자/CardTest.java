@@ -1,3 +1,4 @@
+package 생성자;
 class CardTest{
 	public static void main(String args[]) {
 		System.out.println("Card.width = "  + Card.width);

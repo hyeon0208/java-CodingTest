@@ -1,3 +1,4 @@
+package 배열;
 import java.util.*;
 
 class MultiArrEx1 {

@@ -11,7 +11,7 @@ class BindingTest2 {
 	}
 }
 
-class Parent {
+class Parent3 {
 	int x = 100;
 
 	void method() {
@@ -21,4 +21,4 @@ class Parent {
 
 
 // Child 클래스에는 아무런 멤버도 정의되어 있지 않아, 상속받은 멤버와 메서드만을 가진다.
-class Child extends Parent { }
+class Child3 extends Parent3 { }

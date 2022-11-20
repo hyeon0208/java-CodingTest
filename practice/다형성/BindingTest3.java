@@ -1,7 +1,7 @@
 class BindingTest3{
 	public static void main(String[] args) {
-		Parent p = new Child();
-		Child  c = new Child();
+		Parent4 p = new Child4();
+		Child4  c = new Child4();
 
 		System.out.println("p.x = " + p.x);
 		p.method(); // Child의 메서드가 호출된다.
@@ -11,7 +11,7 @@ class BindingTest3{
 	}
 }
 
-class Parent {
+class Parent4 {
 	int x = 100;
 
 	void method() {
@@ -19,7 +19,7 @@ class Parent {
 	}
 }
 
-class Child extends Parent {
+class Child4 extends Parent4 {
 	int x = 200;
 
 	void method() {

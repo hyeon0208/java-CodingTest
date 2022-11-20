@@ -1,3 +1,4 @@
+package method;
 class Data { int x; } // Data 클래스
 
 class PrimitiveParamEx {

@@ -1,3 +1,4 @@
+package 배열;
 class MultiArrEx3 {
 	public static void main(String[] args) {
 		int[][] m1 = {

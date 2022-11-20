@@ -1,3 +1,4 @@
+package 기본형과참조형;
 public class ValueOf {
     public static void main(String[] args) {
 		String str1 = "1234";

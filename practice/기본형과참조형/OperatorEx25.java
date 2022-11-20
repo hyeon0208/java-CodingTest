@@ -1,3 +1,4 @@
+package 기본형과참조형;
 import java.util.*;
 
 public class OperatorEx25 {

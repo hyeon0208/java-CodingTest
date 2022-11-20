@@ -1,3 +1,4 @@
+package method;
 class FactorialTest2 {
 	static long factorial(int n) {
 		if(n<=0 || n>20) return -1;  // 매개변수의 유효성 검사.

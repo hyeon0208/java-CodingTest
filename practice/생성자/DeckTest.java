@@ -1,3 +1,4 @@
+package 생성자;
 class DeckTest {
 	public static void main(String args[]) {
 		Deck d = new Deck();	   // 카드 한 벌(Deck)을 만든다.

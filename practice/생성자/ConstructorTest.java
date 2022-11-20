@@ -1,3 +1,4 @@
+package 생성자;
 class Data1 {
 	int value;
 }

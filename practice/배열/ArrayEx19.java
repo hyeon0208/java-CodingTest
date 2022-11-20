@@ -1,3 +1,4 @@
+package 배열;
 class ArrayEx19 {
 	public static void main(String[] args) {
 		 int[][] score = {

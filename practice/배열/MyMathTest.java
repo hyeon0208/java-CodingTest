@@ -1,3 +1,4 @@
+package 배열;
 class MyMathTest {
 	public static void main(String args[]) {
 		MyMath mm = new MyMath();
