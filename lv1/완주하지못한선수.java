@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution {
+class 완주하지못한선수 {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
 

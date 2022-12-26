@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-class Solution {
+class 모의고사 {
     public int[] solution(int[] answers) {
         List<Integer> result = new ArrayList<>();
         int[] firstStudent = {1, 2, 3, 4, 5};

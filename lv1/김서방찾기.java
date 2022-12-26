@@ -1,4 +1,4 @@
-class Solution {
+class 김서방찾기 {
     public String solution(String[] seoul) {
         String answer = "";
         

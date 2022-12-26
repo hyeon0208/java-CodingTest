@@ -1,4 +1,4 @@
-class Solution {
+class jadencase문자열 {
     public String solution(String s) {
         String answer = "";
         String[] arr = s.toLowerCase().split("");

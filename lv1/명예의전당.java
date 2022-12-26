@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-class Solution {
+class 명예의전당 {
     public int[] solution(int k, int[] score) {
         int[] answer = new int[score.length];
         List<Integer> honors = new ArrayList(k);

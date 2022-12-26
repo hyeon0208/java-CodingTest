@@ -1,4 +1,4 @@
-class Solution {
+class 소수찾기 {
     public int solution(int n) {
         int answer = 0;
         // 0 ~ n 까지의 수를 가지는 배열 생성

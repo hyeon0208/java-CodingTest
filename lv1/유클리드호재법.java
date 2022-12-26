@@ -1,4 +1,4 @@
-class Solution {
+class 유클리드호재법 {
     public int[] solution(int n, int m) {
         int[] answer = new int[2];
         

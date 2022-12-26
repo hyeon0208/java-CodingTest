@@ -1,4 +1,4 @@
-class Solution {
+class 문자내단어개수 {
     boolean solution(String s) {
         s = s.toLowerCase();
         int cntP = 0;

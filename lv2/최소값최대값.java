@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Solution {
+class 최소값최대값 {
     public String solution(String s) {
         String answer = "";
         List<Integer> results = new ArrayList<>();

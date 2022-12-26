@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-class Solution {
+class 햄버거만들기 {
     public int solution(int[] ingredient) {
         int answer = 0;
 

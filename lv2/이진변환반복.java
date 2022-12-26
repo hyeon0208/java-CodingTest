@@ -1,4 +1,4 @@
-class Solution {
+class 이진변환반복 {
     public int[] solution(String s) {
         int[] answer = new int[2];
 

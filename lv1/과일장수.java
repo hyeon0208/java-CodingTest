@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class 과일장수 {
     public int solution(int k, int m, int[] score) {
         int answer = 0;
 

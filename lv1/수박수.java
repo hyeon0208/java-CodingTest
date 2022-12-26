@@ -1,4 +1,4 @@
-class Solution {
+class 수박수 {
     public String solution(int n) {
         String answer = "";
         for (int i = 1; i <= n; i++) {

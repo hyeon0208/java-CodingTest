@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class 최솟값만들기 {
     public int solution(int []A, int []B) {
         int answer = 0;
         Arrays.sort(A);

@@ -1,4 +1,4 @@
-class Solution {
+class 최소직사각형 {
     public int solution(int[][] sizes) {
         int maxWidth = 0;
         int maxHeigth = 0;

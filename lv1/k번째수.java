@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class k번째수 {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
 

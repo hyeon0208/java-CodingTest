@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class 정수내림차순 {
 	public long solution(long n) {
 		String[] arr = String.valueOf(n).split("");
 		Arrays.sort(arr); // 오름차순으로 sort

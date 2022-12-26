@@ -1,4 +1,4 @@
-class Solution {
+class 삼총사 {
     public int solution(int[] number) {
         int answer = 0;
         for (int i = 0; i < number.length; i++) {

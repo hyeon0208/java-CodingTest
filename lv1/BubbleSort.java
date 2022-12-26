@@ -1,5 +1,5 @@
 
-public class ArrayEx10 {
+public class BubbleSort {
 	// 버블정렬
 	public static void main(String[] args) {
 		int[] numArr = new int[10];

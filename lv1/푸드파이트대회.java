@@ -3,7 +3,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class Solution {
+class 푸드파이트대회 {
     public String solution(int[] food) {
         String answer = "";
         List<String> left = new ArrayList<>();

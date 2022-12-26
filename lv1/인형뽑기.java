@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class 인형뽑기 {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
         Stack<Integer> stack = new Stack<>();

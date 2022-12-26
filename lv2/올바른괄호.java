@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-class Solution {
+class 올바른괄호 {
     boolean solution(String s) {
         boolean answer = true;
 

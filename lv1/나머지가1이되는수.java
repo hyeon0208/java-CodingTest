@@ -1,4 +1,4 @@
-class Solution {
+class 나머지가1이되는수 {
     public int solution(int n) {
         int answer = 0;
         for (int i = 1; i <= n; i++) {

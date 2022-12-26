@@ -1,4 +1,4 @@
-class Solution {
+class 하샤드수 {
     public boolean solution(int x) {
         int sum = 0;
         int n = x;

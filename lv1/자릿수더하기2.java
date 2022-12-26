@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Solution {
+public class 자릿수더하기2 {
     public int solution(int n) {
         int answer = 0;
 

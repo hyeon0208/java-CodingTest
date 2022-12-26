@@ -1,4 +1,4 @@
-class Solution {
+class 문자열나누기 {
     public int solution(String s) {
         char first = s.charAt(0);
         int same = 0;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class 실패율 {
     public static int[] solution(int N, int[] stages) {
         int[] failCount = new int[N];
         Map<Integer, Double> rate = new LinkedHashMap<>();

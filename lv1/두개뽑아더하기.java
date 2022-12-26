@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+class 두개뽑아더하기 {
     public int[] solution(int[] numbers) {
         Set<Integer> set = new HashSet<>();
         for(int i = 0; i < numbers.length; i++) {
