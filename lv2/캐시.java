@@ -19,12 +19,6 @@ public class 캐시 {
         List<String> caches = new LinkedList<>();
         for (int i = 0; i < cities.length; i++) {
             String city = cities[i].toLowerCase(); // 대소문자 구분이 없다.
-            // cache hit
-            if (caches.contains(city)) {
-                caches.remove(city);
-                caches.add(city);
-                answer += 1;
-            }
             // cache miss
             if (!caches.contains(city)) {
                 answer += 5;
@@ -33,7 +27,16 @@ public class 캐시 {
                     caches.remove(0);
                 }
                 caches.add(city);
+                continue;
             }
+
+            // cache hit
+            if (caches.contains(city)) {
+                caches.remove(city);
+                caches.add(city);
+                answer += 1;
+            }
+
             System.out.println("cache : " + caches + " | answer : " + answer);
         }
         return answer;
