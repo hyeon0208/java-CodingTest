@@ -33,7 +33,6 @@ public class 기능개발 {
             }
             workDays.add(count);
         }
-        System.out.println(workDays);
         return workDays;
     }
 
@@ -50,8 +49,6 @@ public class 기능개발 {
                 function++;
                 workDays.poll();
             }
-            System.out.println(currentWork);
-
             answer.add(function);
         }
 
