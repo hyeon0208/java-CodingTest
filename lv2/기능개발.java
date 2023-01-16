@@ -12,12 +12,17 @@ public class 기능개발 {
     }
 
     public static int[] solution(int[] progresses, int[] speeds) {
-        List<Integer> answer = new ArrayList<>();
+        Queue<Integer> workDays = getWorkDays(progresses, speeds);
+        int[] answer = getDistributionCount(workDays);
+
+        return answer;
+    }
+
+    // 작업 일 수 구하는 함수
+    private static Queue<Integer> getWorkDays(int[] progresses, int[] speeds) {
+        int success = 0;
         Queue<Integer> workDays = new LinkedList<>();
 
-        int success = 0;
-
-        // 작업 일 수 구하기
         for (int i = 0; i < progresses.length; i++) {
             int count = 0;
             success = progresses[i];
@@ -28,19 +33,29 @@ public class 기능개발 {
             }
             workDays.add(count);
         }
+        System.out.println(workDays);
+        return workDays;
+    }
 
-        // 배포가능 한 기능 수 구하기
+    // 배포가능 한 기능 수 구하는 함수
+    private static int[] getDistributionCount(Queue<Integer> workDays) {
+        List<Integer> answer = new ArrayList<>();
+
         while (!workDays.isEmpty()) {
             int currentWork = workDays.poll();
             int function = 1;
 
-            while(!workDays.isEmpty() && currentWork >= workDays.peek()) {
+            // 작업 시간이 같은 경우에도 같은 날에 배포가 되므로 ">="
+            while (!workDays.isEmpty() && currentWork >= workDays.peek()) {
                 function++;
                 workDays.poll();
             }
+            System.out.println(currentWork);
+
             answer.add(function);
         }
 
+        // List를 int[] 배열로 변환
         return answer.stream().mapToInt(Integer::intValue).toArray();
     }
 }
