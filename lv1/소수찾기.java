@@ -1,5 +1,8 @@
 class 소수찾기 {
-    public int solution(int n) {
+    public static void main(String[] args) {
+        System.out.println(solution(10));
+    }
+    public static int solution(int n) {
         int answer = 0;
         // 0 ~ n 까지의 수를 가지는 배열 생성
         int[] arr = new int[n + 1];
@@ -21,11 +24,13 @@ class 소수찾기 {
                 arr[j] = 1;
             }
         }
+
         for (int i = 2; i < arr.length; i++) {
             if (arr[i] != 1) {
                 answer++;
             }
         }
+
         return answer;
     }
 }
