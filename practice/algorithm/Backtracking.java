@@ -3,7 +3,8 @@ package algorithm;
 import java.util.Arrays;
 
 public class Backtracking {
-    static int[][] graph = {{}, {2, 3}, {4}, {5, 6}, {2}, {5, 7}, {3}, {7}};
+    static int[] graph = {1, 2, 3, 4, 5, 6};
+
     static boolean[] visited = new boolean[graph.length];
     static int n = graph.length;
 
@@ -32,7 +33,7 @@ public class Backtracking {
     static void print() {
         for (int i = 0; i < n; i++)
             if (visited[i]) {
-                System.out.print(Arrays.toString(graph[i]) + " ");
+                System.out.print(graph[i] + " ");
             }
         System.out.println();
     }
