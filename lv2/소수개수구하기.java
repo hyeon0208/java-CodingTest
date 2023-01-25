@@ -22,6 +22,9 @@ public class 소수개수구하기 {
                 answer++;
             }
         }
+        System.out.println(binary);
+        System.out.println(nums);
+
 
         return answer;
     }
