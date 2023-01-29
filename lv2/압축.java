@@ -22,20 +22,22 @@ public class 압축 {
         }
 
         int idx = 0;
-        while(idx < msg.length()){
-            String w = "";
-            while(idx < msg.length()){
-                if(!book.containsKey(w+msg.charAt(idx))){
+        while (idx < msg.length()) {
+            String str = "";
+            // 해당 번째 인덱스의 문자가 있다면, 그 다음 인덱스의 문자들을 합친 문자열을 반복확인.
+            while (idx < msg.length()) {
+                if (!book.containsKey(str + msg.charAt(idx))) {
                     break;
-                }else{
-                    w += msg.charAt(idx);
+                } else {
+                    str += msg.charAt(idx);
                 }
                 idx++;
             }
+            indexLists.add(book.get(str));
 
-            indexLists.add(book.get(w));
-            if(idx < msg.length()){
-                book.put(w+msg.charAt(idx), book.size() + 1);
+            // 다음 글자까지의 문자열을 사전에 추가
+            if (idx < msg.length()) {
+                book.put(str + msg.charAt(idx), book.size() + 1);
             }
         }
         return indexLists.stream().mapToInt(Integer::intValue).toArray();
