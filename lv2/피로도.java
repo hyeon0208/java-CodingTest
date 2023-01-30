@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class 피로도 {
     private static int answer;
@@ -23,6 +24,7 @@ public class 피로도 {
                 dfs(depth + 1, k - dungeons[i][1], dungeons);
                 visit[i] = false;
             }
+            System.out.println(Arrays.toString(visit) +  " : " + depth + " : " + k);
         }
         answer = Math.max(answer, depth);
     }
