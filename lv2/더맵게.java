@@ -14,9 +14,11 @@ public class 더맵게 {
         }
 
         while (queue.peek() < K) {
+            // 큐의 크기가 1이랑 같거나 작으면 조합할 수 없다.
             if (queue.size() <= 1) {
                 return -1;
             }
+            // 스코빌 지수가 제일 낮은 음식이 K보다 크다면 종료
             if (queue.peek() >= K) {
                 break;
             }
