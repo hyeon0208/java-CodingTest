@@ -41,9 +41,23 @@ public class 주차요금계산 {
         // 아직 출차하지 않은 차 계산
         if (!parking.isEmpty()) {
             for (String carNum : parking.keySet()) {
-                costs.put(carNum, costs.get(carNum) + ((23 * 60 + 59) - parking.get(carNum)));
+                Integer inTime = parking.get(carNum);
+                inTime = inTime == null ? 0 : inTime;
+
+                Integer cost = costs.get(carNum);
+                cost = cost == null ? 0 : cost;
+
+                int total = cost.intValue();
+
+                costs.put(carNum, total + (23 * 60 + 59) - parking.get(carNum));
             }
         }
+
+//        if (!parking.isEmpty()) {
+//            for (String carNum : parking.keySet()) {
+//                costs.put(carNum, costs.get(carNum) + ((23 * 60 + 59) - parking.get(carNum)));
+//            }
+//        }
 
         List<Integer> answer = new ArrayList<>(costs.size());
         for (Integer c : costs.values()) {
@@ -54,7 +68,7 @@ public class 주차요금계산 {
 
             // 요금 = 기본요금 + ((min-기본시간) / 단위시간) * 단위요금
             if (c <= basicTime) {
-                answer.add(basicCharge) ;
+                answer.add(basicCharge);
             } else {
                 answer.add((int) (basicCharge + Math.ceil((double) (c - basicTime) / unitTime) * unitCharge));
             }
