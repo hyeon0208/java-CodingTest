@@ -1,9 +1,5 @@
 package highscorekit.dfs_bfs;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class 네트워크 {
     static boolean[] linked;
 
