@@ -23,16 +23,16 @@ public class 방문길이 {
 
             if (dirs.charAt(i) == 'U') {
                 nextY++; // 위로 한칸
-                moving += currentX + "" + currentY + "->" + nextX + "" + nextY + "";
+                moving += currentX + "" + currentY + "->" + nextX +  nextY;
             } else if (dirs.charAt(i) == 'D') {
                 nextY--; // 밑으로 한칸
-                moving += nextX + "" + nextY + "->" + currentX + "" + currentY + "";
+                moving += nextX + "" + nextY + "->" + currentX + currentY ;
             } else if (dirs.charAt(i) == 'R') {
                 nextX++; // 오른쪽으로 한칸
-                moving += currentX + "" + currentY + "->" + nextX + "" + nextY + "";
+                moving += currentX + "" + currentY + "->" + nextX + nextY;
             } else {
                 nextX--; // 왼쪽으로 한칸
-                moving += nextX + "" + nextY + "->" + currentX + "" + currentY + "";
+                moving += nextX + "" + nextY + "->" + currentX + currentY;
             }
 
             // 좌표평면의 경계를 넘어가면 추가하지 않고 다음 명령으로 넘어간다.
