@@ -3,7 +3,6 @@ public class 프렌즈4블록 {
 
     public static void main(String[] args) {
         System.out.println(solution(4, 5, new String[]{"CCBDE", "AAADE", "AAABF", "CCBBF"}));
-        System.out.println(solution(2, 2, new String[]{"aa", "aa"}));
     }
 
     public static int solution(int m, int n, String[] board) {
@@ -33,17 +32,17 @@ public class 프렌즈4블록 {
 
     private static void dropBlock(int m, int n) {
         // 밑에서부터 위로 탐색 (빈 블럭위에 떨어질 수 있는 블럭이 있는지 밑에서 부터 올라가면서 확인하기 때문)
-        for (int i = m - 1; i >= 0; i--) {
-            for (int j = 0; j < n; j++) {
-                if (blockMap[i][j] != '-') {
+        for (int row = m - 1; row >= 0; row--) {
+            for (int col = 0; col < n; col++) {
+                if (blockMap[row][col] != '-') {
                     continue;
                 }
-                if (blockMap[i][j] == '-') {
+                if (blockMap[row][col] == '-') {
                     // '-' 위의 블록을 떨어트린다.
-                    for (int k = i - 1; k >= 0; k--) { // 젤 위의 행까지 탐색
-                        if (blockMap[k][j] != '-') {
-                            blockMap[i][j] = blockMap[k][j];
-                            blockMap[k][j] = '-';
+                    for (int k = row - 1; k >= 0; k--) { // 젤 위의 행까지 탐색
+                        if (blockMap[k][col] != '-') {
+                            blockMap[row][col] = blockMap[k][col];
+                            blockMap[k][col] = '-';
                             break; // 다음 '-'를 찾으러 내부 반복문 종료
                         }
                     }
